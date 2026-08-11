@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sección de noticias</title>
+		<link rel="stylesheet" href="../estilospr/hojaEstiloproyecto.css">
+	</head>
+    
+	<body>
+		<header>
+        <h1 style="text-align: left;">DEPORTE CHILANGO</h1>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span>☰</span> 
+        </div>
+
+        <ul id="menu">
+            <li><a href="../Deporte_chilango.html">Inicio</a></li>
+            <li><a href="../Cronicas/seccion_cronica.html">Crónicas</a></li>
+            <li><a href="../Opinion/seccion_opinion.html">Opinión</a></li>
+            <li><a href="destacados.html">Destacados</a></li>
+            <li><a href="mundial_2026.html">Copa mundial 2026</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class= "card">
+            <img src="../imgs/temachtiani.jpeg" alt="PILARES iztapalapa celebra el Día del Maestro con actividad futbolera">
+                <h3 class="parrGen">PILARES iztapalapa celebra el Día del Maestro con actividad futbolera</h3>
+                <p>El fútbol rinde homenaje a la docencia en Iztapalapa con el torneo “Temachtiani”</p>
+                <a href="../Noticias/temachitani.html">Leer más</a>
+            </div>
+        
+            
+        <div class="card">
+            <img src="../imgs/san_marcos.jfif" alt="Inauguración San Marcos">
+            <div class="card-body">
+                <h3 class="parrGen">Inauguran instalaciones deportivas en PILARES San Marcos</h3>
+                <p>Se estrenaron nuevas instalaciones deportivas en la Alcaldía</p>
+                <a href="../Noticias/San_Marcos.html">Leer más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../imgs/iztapalapa_recupera.jfif" alt="Iztapalapa recupera espacios">
+            <div class="card-body">
+                <h3 class="parrGen">Iztapalapa recupera el espacio público en Lomas de San Lorenzo</h3>
+                <p>Tras una larga jornada de actividades comunitarias, se formaliza la apertura de las canchas en Iztapalapa</p>
+                <a href="../Noticias/Iztapalapa_San_Lorenzo.html">Leer más</a>
+            </div>
+        </div>
+            <div class="card">
+                <img src="../imgs/mega_clase_de_futbol_en_el_zocalo_2026.jfif" alt="Clase fútbol">
+                <div class="card-body">
+                    <p class="parrGen">Mega clase en el Zócalo</p>
+                    <p>Miles de personas se reunieron en el corazón de la Ciudad de México para hacer historia.</p>
+                    <a href="../Noticias/actividad_urbana.html">Leer más</a>
+                </div>
+                </div> 
+        
+        <article class="card">
+                <img src="../imgs/clase_de_futbol_velodromo.jfif" alt="Clase de futbol">
+                <div class="card-body">
+                    <h3 class="parrGen">Fútbol infantil en el Palacio</h3>
+                    <p>PILARES CDMX organiza una clase masiva para niñas y niños como parte de la fiebre mundialista.</p>
+                    <a href="../Noticias/comunidad_pilares.html">Leer más</a>
+                </div>
+            </article>
+         
+        
+    </main>
+        
+    <footer>
+        <p>Nombre: Arturo Osorio Córdova</p>
+        <p>Proyecto editorial "Deporte Chilango"</p>
+        <p>Condiciones de uso</p>
+        <p>Política de privacidad</p>
+    </footer>
+        
+        
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+            });
+        
+
+    </script>  
+        
+	</body>
+</html>
+

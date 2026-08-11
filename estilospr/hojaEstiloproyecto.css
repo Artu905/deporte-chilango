@@ -1,0 +1,441 @@
+
+@font-face {
+    font-family: 'TourneyBoldItalic';
+    src: url('../fuentes_chilango/Tourney-BoldItalic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TourneyCondensed';
+    src: url('../fuentes_chilango/Tourney-CondensedExtraBold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Olde';
+    src: url('../fuentes_chilango/OldeEnglish.ttf') format('truetype');
+}
+
+/* ── RESET BÁSICO ── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── BODY ── */
+body {
+    background-color: #1a3d1a;
+    max-width: 1250px;
+    margin: 0 auto;
+    font-family: 'TourneyBoldItalic', sans-serif;
+}
+
+/* ── HEADER ── */
+header {
+    background-color: #1a3d1a;
+    color: white;
+    padding: 0.7em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+h1 {
+    font-family: 'Olde';
+    font-weight: 420;
+    font-size: 3em;
+    color: antiquewhite;
+    text-align: left;
+    padding: 0.3em 0.5em;
+}
+
+
+nav {
+    background-color: green;
+}
+
+nav ul {
+    font-family: 'TourneyCondensed';
+    background-color: green;
+    display: flex;
+    gap: 0;
+    list-style: none;
+    padding: 0 1em;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.7em 1.2em;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: 'TourneyCondensed';
+    font-size: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+a:hover {
+    font-family: 'TourneyCondensed';
+    color: antiquewhite;
+    background-color: #1a3d1a;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #1a3d1a 0%, #0f2b0f 100%);
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2.5em 2em 2em;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    opacity: 0.18;
+}
+
+h2 {
+    font-family: 'TourneyCondensed'; 
+    font-weight: 350;
+    font-size: 3.05em; /* ¡Que se vea imponente! */
+    color: antiquewhite;
+    text-transform: none;
+    text-align: center;
+    padding: 0.5em;
+}
+
+/* ── BIENVENIDA (banda debajo del hero) ── */
+.bienvenida {
+    background: antiquewhite;
+    padding: 1.2em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #ccc;
+}
+
+.bienvenida h3 {
+    font-family: 'TourneyCondensed';
+    font-size: 1.4em;
+    color: #1a3d1a;
+}
+
+.bienvenida h3 em {
+    font-style: normal;
+    color: green;
+}
+
+.bienvenida p {
+    font-family: 'TourneyBoldItalic';
+    color: #555;
+    font-size: 0.88em;
+    margin-top: 0.3em;
+    max-width: 480px;
+}
+
+.btn-destacadas {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    background: #1a3d1a;
+    color: antiquewhite;
+    font-family: 'TourneyCondensed';
+    font-size: 0.95em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.btn-destacadas:hover {
+    background: green;
+    color: antiquewhite;
+}
+
+/* ── MAIN ── */
+main {
+    padding: 1.5em;
+    background-color: antiquewhite;
+}
+
+/* ── ETIQUETA DE SECCIÓN ── */
+.section-label {
+    font-family: 'TourneyCondensed';
+    font-size: 0.78em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: green;
+    margin-bottom: 1em;
+    border-left: 3px solid green;
+    padding-left: 0.6em;
+}
+
+/* ── CARDS ── */
+.cards {
+    display: flex;
+    gap: 3em;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.card {
+    background-color: #fbf8ef;
+    border-radius: 12px;
+    margin: 0;
+    text-align: left;
+    width: calc(33% - 1em);
+    min-width: 240px;
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.16);
+}
+
+.card img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+/* Card body wrapper — agrega esto en tu HTML dentro de cada .card */
+.card-body {
+    padding: 0.9em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* ── PÁRRAFOS DENTRO DE CARD ── */
+.parrGen {
+    font-family: 'TourneyBoldItalic';
+    color: antiquewhite;
+    font-size: 1em;
+    background-color: green;
+    margin: 0 0 0.5em 0;
+    padding: 0.4em 0.7em;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.card p:not(.parrGen) {
+    font-family: 'TourneyBoldItalic';
+    color: #444;
+    font-size: 0.88em;
+    background: none;
+    margin: 0.4em 0 0.7em;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* ── BOTÓN LEER MÁS ── */
+.btn-leer,
+.card a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.4em 1em;
+    background-color: green;
+    color: antiquewhite !important;
+    text-decoration: none;
+    font-family: 'TourneyCondensed';
+    font-size: 0.85em;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none !important;
+    width: auto !important;
+    align-self: flex-start;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-leer:hover,
+.card a:hover {
+    background-color: #1a3d1a;
+    color: antiquewhite !important;
+    text-decoration: none;
+}
+
+/* ── MINUTO A MINUTO ── */
+.minuto {
+    background: #fbf8ef;
+    border-radius: 10px;
+    padding: 0.85em 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    font-family: 'TourneyCondensed';
+    font-size: 0.95em;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 1.4em;
+    border-left: 4px solid green;
+}
+
+.minuto .bell { font-size: 1.2em; }
+
+/* ── PORTADA ── */
+.parrPortada {
+    font-family: 'TourneyBoldItalic';
+    font-weight: 70;
+    font-size: 4em;
+    color: forestgreen;
+}
+
+#padreCabeza {
+    display: flex;
+    align-items: center;
+}
+
+#titulo {
+    flex-grow: 6;
+    text-align: center;
+}
+
+.fecha-columna {
+    font-size: 2em;
+    text-align: center;
+    color: #493d13;
+}
+
+/* ── FOOTER ── */
+footer {
+    background-color: #1a3d1a;
+    margin-bottom: 0;
+    padding: 1.2em 1.5em;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: left;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+footer a {
+    color: #7ddc9a;
+    text-decoration: none;
+    margin-right: 0.8em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    background-color: #3f8f1f;
+}
+
+.countdown{
+    background: linear-gradient(135deg, #0f0f0f, #1d1d1d);
+    color: white;
+    text-align:left;
+    padding: 40px 20px;
+    margin: 30px auto;
+    border-top: 4px solid #3f8f1f;
+    border-bottom: 4px solid #3f8f1f;
+}
+
+.countdown h2{
+    font-size: 2em;
+    margin-bottom: 0.4em;
+    color: #7CFC00;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+#timer{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    h1 { font-size: 2em; }
+    .hero h2 { font-size: 1.8em; }
+    .cards { flex-direction: column; }
+    .card { width: 100%; }
+    .bienvenida { flex-direction: column; }
+    nav ul { flex-wrap: nowrap; overflow-x: auto; }
+}
+
+.cards {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .card {
+        width: 100%;
+        min-width: unset;
+        flex: none;
+    }
+
+    .card-body {
+        padding: 0.9em 1em 1.2em;
+    }
+
+    
+    .card a,
+    .btn-leer {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+        padding: 0.65em 1em;
+        font-size: 1em;
+        margin-top: 0.8em;
+        box-sizing: border-box;
+    }
+
+ nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #3f8f1f;
+        padding: 0;
+    }
+
+    nav ul.active{
+        display: flex;
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+}

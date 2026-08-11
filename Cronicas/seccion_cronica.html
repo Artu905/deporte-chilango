@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sección de noticias</title>
+		<link rel="stylesheet" href="../estilospr/hojaEstiloproyecto.css">
+	</head>
+    
+	<body>
+		<header>
+        <h1 style="text-align: left;">DEPORTE CHILANGO</h1>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span>☰</span> 
+        </div>
+
+        <ul id="menu">
+            <li><a href="../Deporte_chilango.html">Inicio</a></li>
+            <li><a href="../Noticias/seccion_noticias.html">Noticias</a></li>
+            <li><a href="../Opinion/seccion_opinion.html">Opinión</a></li>
+            <li><a href="destacados.html">Destacados</a></li>
+            <li><a href="mundial_2026.html">Copa mundial 2026</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+            <div class="card">
+                <img src="../imgs/Pumas-derrota_al_America.jfif" alt="Pumas vs América">
+                    <h3 class="parrGen">Pumas gana el clásico</h3>
+                    <p>Pumas derrota al América por la mínima en el clásico capitalino.</p>
+                    <a href="../Cronicas/clasico_capitalino.html">Leer más</a>
+            </div>
+
+         
+        
+    </main>
+        
+    <footer>
+        <p>Nombre: Arturo Osorio Córdova</p>
+        <p>Proyecto editorial "Deporte Chilango"</p>
+        <p>Condiciones de uso</p>
+        <p>Política de privacidad</p>
+    </footer>
+        
+        
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+            });
+        
+
+    </script>  
+        
+	</body>
+</html>
+

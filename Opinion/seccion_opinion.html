@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sección de noticias</title>
+		<link rel="stylesheet" href="../estilospr/hojaEstiloproyecto.css">
+	</head>
+    
+	<body>
+		<header>
+        <h1 style="text-align: left;">DEPORTE CHILANGO</h1>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span>☰</span> 
+        </div>
+
+        <ul id="menu">
+            <li><a href="../Deporte_chilango.html">Inicio</a></li>
+            <li><a href="../Noticias/seccion_noticias.html">Noticias</a></li>
+            <li><a href="../Cronicas/seccion_cronica.html">Crónica</a></li>
+            <li><a href="destacados.html">Destacados</a></li>
+            <li><a href="mundial_2026.html">Copa mundial 2026</a></li>
+        </ul>
+    </nav>
+
+    <main>
+       
+        <div class="card">
+            <img src="../imgs/remodelacion_estadio_banorte.jfif" alt="Remodelacion Estadio Banorte">
+                <p class="parrGen">¡El Coloso revienta! ¿Tradición o Mercancía?</p>
+                <p>La Ciudad de México recupera su latido más profundo. Tras casi 2 años de silencio, el Estadio Azteca —ahora Estadio Banorte— reabre sus puertas...</p>
+                <a href="../Opinion/columna_estadio_azteca.html">Leer más</a>
+            </div>
+
+        <div class="card">
+            <img src="../imgs/blaijaith_aguilar.jfif" alt="Silencio roto">
+                <p class="parrGen">El silencio roto</p>
+                <p>Blaijaith Aguilar anuncia su separación del equipo de gimnasia nacional de México</p>
+                <a href="../Opinion/silencio_roto.html">Leer más</a>
+            </div>
+
+         
+        
+    </main>
+        
+    <footer>
+        <p>Nombre: Arturo Osorio Córdova</p>
+        <p>Proyecto editorial "Deporte Chilango"</p>
+        <p>Condiciones de uso</p>
+        <p>Política de privacidad</p>
+    </footer>
+        
+        
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+            });
+        
+
+    </script>  
+        
+	</body>
+</html>
+

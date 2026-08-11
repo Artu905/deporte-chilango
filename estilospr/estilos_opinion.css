@@ -1,0 +1,65 @@
+
+@media(min-width: 319px) {
+
+    
+@font-face {
+    font-family: 'TourneyBoldItalic';
+    src: url('../fuentes_chilango/Tourney-BoldItalic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TourneyCondensed';
+    src: url('../fuentes_chilango/Tourney-CondensedExtraBold.otf') format('truetype');
+}
+    
+@font-face {
+    font-family: 'Olde';
+    src: url('../fuentes_chilango/OldeEnglish.ttf') format('truetype');
+}   
+
+body {
+    background-color: #fdf5e6; /* El tono crema papel */
+    margin: 0.5em;
+    padding: 0.7em;
+}
+
+main {
+    margin: 1.2em;
+    background-color: #fdf5e6;
+    padding: 2.5em;
+}
+
+h1 {
+    font-family: 'TourneyBoldItalic';
+    color: brown;
+    text-align: center;
+}
+       
+strong{
+    font-family: 'TourneyCondensed';
+    color: green;
+    background: white;
+    }
+    
+    
+.categoria{
+    font-family: 'Olde';
+    color: brown;
+    }
+    
+.parrGen{
+    font-family: 'Verdana';
+    color:green;
+    background:antiquewhite;
+    }
+
+figcaption{
+    font-family: 'TourneyCondensed';
+    color: blue;
+    }
+/* El cuerpo del texto */
+p {
+    font-size: 1.2em;
+    color: brown;
+    text-align: justify;
+    }
