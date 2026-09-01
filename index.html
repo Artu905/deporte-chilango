@@ -22,7 +22,7 @@
     </div>
 
     <ul id="menu">
-        <li><a href="Noticias/seccion_noticias.html">Noticias</a></li>
+        <li><a href="Noticias/Noticias.html">Noticias</a></li>
         <li><a href="Cronicas/seccion_cronica.html">Crónicas</a></li>
         <li><a href="Opinion/seccion_opinion.html">Opinión</a></li>
     </ul>
@@ -39,7 +39,7 @@
         <p>Sitio web enfocado en la cobertura deportiva de la CDMX, con el objetivo de transmitir y divulgar noticias, crónicas, reportajes 
             y una sección de opinión con el fin de llevarles la información en todos sus hogares.</p>
     </div>
-    <a href="destacados" class="btn-destacadas">⚡ Noticias destacadas</a>
+    <a href="destacados/Airbnb_2026.html" class="btn-destacadas">⚡ Noticias destacadas</a>
 </div>
 
 <main>
@@ -49,12 +49,18 @@
     <section id="seccionprimera">
         <section class="cards">
           
+        <div class= "card">
+            <img src="imgs/tiro-libre.jfif" alt="Tiro Libre">
+                <h3 class="parrGen"> Presentan Tiro Libre en la FILUNI, una aproximación critica a la mirada del fútbol </h3>
+                <a href="Destacados/Tiro_libre.html">Leer más</a>
+            </div>
+            
             <div class= "card">
             <img src="imgs/airbnb.jfif" alt="Hospedajes CDMX">
                 <h3 class="parrGen">¿Estamos listos para el mundial? 
                     Te presentamos la radiografía de alojamiento para la próxima justa </h3>
                 <p>1 de cada 4 propiedades se rentan en CDMX a través de la plataforma</p>
-                <a href="Noticias/Airbnb_2026.html">Leer más</a>
+                <a href="Destacados/Airbnb_2026.html">Leer más</a>
             </div>
             
             <div class= "card">
@@ -151,6 +157,16 @@
     <p>Condiciones de uso</p>
     <p>Política de privacidad</p>
 </footer>
+<script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+}); 
+    
+    </script>
 
 </body>
 </html>
